@@ -45,7 +45,10 @@ Potential benefits like weight loss, heart health💓, lower blood pressure🩸,
 <img src ="https://cdn.dribbble.com/users/948184/screenshots/3471610/tea.gif"
 width =250
 >
-<button>Try Boba Today !!!</button>
+<br>
+<button>
+  Buy Boba
+</button>
 
 
 
@@ -53,7 +56,8 @@ width =250
 
 <style>
 body{
-  background-color:rgba(180, 223, 91);
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+
 }
 img {
     margin: 0 auto;
@@ -65,7 +69,7 @@ h1{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     padding: 20px;
-    background-color: rgb(228, 228, 120);
+    background: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
     font-family: fantasy;
 }
 h2{
@@ -73,33 +77,34 @@ h2{
 font-size: 40px;
 font-style: oblique;
 font-family: cursive;
+background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%); ;
 
 }
 p{
   font-size: 25px;
-  font-family: cursive;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: lighter;
 border: 1px solid black;
 border-radius: 10px 5px 10px 5px;
-background-color: rgb(232, 250, 132);
+background-image: linear-gradient(110.8deg, rgb(86, 238, 225) 11.4%, rgb(176, 255, 39) 84.5%);
 }
 
 h3{
   text-align: center;
-font-family: cursive;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 40px;
 border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(228, 228, 120);
+    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);  
 
 }
 
 li{
 font-size: 20px;
-font-family: cursive;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 border-color:1px solid black;
-background-color: rgb(228, 228, 120);
+background-image: radial-gradient(circle at 49.8% 44.4%, rgb(251, 230, 59) 0%, rgb(161, 255, 63) 90%);
 border-radius: 10px;
 padding:10px;
 
@@ -138,11 +143,12 @@ padding: 20px 30px ;
 font-size: 24px;
 border:none;
 border-radius: 6px;
-box-shadow: rgb(228, 175, 230);
+box-shadow: rgb(239, 162, 241);
 }
 button:hover{
 cursor:pointer;
 transition: all 200ms ease-in-out;
+background-color: rgb(248, 190, 231);
 }
 .container {
   max-width: 600px;
@@ -150,17 +156,19 @@ transition: all 200ms ease-in-out;
   padding: 60px 100px;
 }
  </style>
+</div>
+<script>
+ function buyBoba(){
+let name = prompt("What is your name?");
+let email = prompt("What is your email?");
+let coffee =prompt ("What is your favourite coffee?");
+alert("Welcome " + name + " A list of Boba spots near you will be sent shortly👋");
+}
 
 
+let buyBobaButton = document.querySelector("button");
+buyBobaButton.addEventListener("click" , buyBoba);
 
-
-
-
-
-
-
-
-
-  </div>
+  </script>
 </body>
 </html>
